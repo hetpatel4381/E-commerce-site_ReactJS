@@ -56,7 +56,18 @@ button{
   color: var(--primary1);
 }
 
-.nav-links-nav a{
+.nav-links-nav .social-icons a{
   color: var(--search);
 }
 /* Header Ends here */
+
+
+/* Footer starts here*/
+
+.footer{
+  background-color: var(--lighter2);
+}
+
+
+
+/* Footer Ends here*/
