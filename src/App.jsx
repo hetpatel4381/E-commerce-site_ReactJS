@@ -7,6 +7,10 @@ import Shop from './pages/Shop';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Blog from './pages/Blog';
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Wishlist from "./pages/Wishlist";
+import Account from "./pages/Account";
 
 function App() {
 
@@ -20,6 +24,10 @@ function App() {
             <Route path='blog' element={<Blog />} />
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
+            <Route path='cart' element={<Cart />} />
+            <Route path='login' element={<Login />} />
+            <Route path='wishlist' element={<Wishlist />} />
+            <Route path='account' element={<Account />} />
           </Route>
         </Routes>
       </BrowserRouter>
