@@ -1,13 +1,14 @@
 import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/apneck.png";
 import { HiOutlineInboxIn } from "react-icons/hi";
 import { VscAccount } from "react-icons/vsc";
 import { CgShoppingCart } from "react-icons/cg";
 
 const Header = () => {
+  const location = useLocation();
   return (
     <>
       <header className="header-top-strip p-1 px-4 shadow-md">
@@ -59,24 +60,82 @@ const Header = () => {
               </div>
             </div>
             <div className="nav-links col-4 d-flex align-items-center justify-content-between text-center">
-              <Link to="/">Home</Link>
-              <Link to="/shop">Shop</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/about">About</Link>
-              <Link to="/contact">Contact</Link>
+              <Link
+                to="/"
+                className={location.pathname === "/" ? "active" : "inactive"}
+              >
+                Home
+              </Link>
+              <Link
+                to="/shop"
+                className={
+                  location.pathname === "/shop" ? "active" : "inactive"
+                }
+              >
+                Shop
+              </Link>
+              <Link
+                to="/blog"
+                className={
+                  location.pathname === "/blog" ? "active" : "inactive"
+                }
+              >
+                Blog
+              </Link>
+              <Link
+                to="/about"
+                className={
+                  location.pathname === "/about" ? "active" : "inactive"
+                }
+              >
+                About
+              </Link>
+              <Link
+                to="/contact"
+                className={
+                  location.pathname === "/contact" ? "active" : "inactive"
+                }
+              >
+                Contact
+              </Link>
             </div>
             <div className="nav-links-nav col-3 d-flex align-items-center justify-content-around">
-              <Link to={"wishlist"} className="d-flex">
-                <HiOutlineInboxIn className="fs-3 mx-2" />
-                <span>Wishlist</span>
+              <Link
+                to={"wishlist"}
+                className={
+                  location.pathname === "/wishlist" ? "inactive" : "active"
+                }
+              >
+                <div className="d-flex">
+                  <HiOutlineInboxIn className="fs-3 mx-2" />
+                  <span>Wishlist</span>
+                </div>
               </Link>
-              <Link to={"login"} className="d-flex">
-                <VscAccount className="fs-3 mx-2" />
-                <span>Account</span>
+              <Link
+                to={"login"}
+                className={
+                  location.pathname === "/login" ? "inactive" : "active"
+                }
+              >
+                <div className="d-flex">
+                  <span>
+                    <VscAccount className="fs-3 mx-2" />
+                  </span>
+                  <span>Account</span>
+                </div>
               </Link>
-              <Link to={"cart"} className="d-flex">
-                <CgShoppingCart className="fs-3 mx-2" />
-                <span>Cart</span>
+              <Link
+                to={"cart"}
+                className={
+                  location.pathname === "/cart" ? "inactive" : "active"
+                }
+              >
+                <div className="d-flex">
+                  <span>
+                    <CgShoppingCart className="fs-3 mx-2" />
+                  </span>
+                  <span>Cart</span>
+                </div>
               </Link>
             </div>
           </div>
