@@ -1,12 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Hero from '../Components/hero';
-import FeaturedProducts from '../Components/FeaturedProducts';
+import React from "react";
+import { Link } from "react-router-dom";
+import Hero from "../Components/hero";
+import FeaturedProducts from "../Components/FeaturedProducts";
+import NewArrivals from "../Components/NewArrivals";
+import img1 from "../assets/images/banner/b17.jpg";
+import img2 from "../assets/images/banner/b10.jpg";
 
 const Home = () => {
   return (
     <>
-      <section className="banner">
+      <section className="banner mb-3">
         <div className="container-xxl">
           <div className="row">
             <div className="banner-details p-5 d-flex flex-column align-items-start justify-content-center">
@@ -49,7 +52,42 @@ const Home = () => {
                 Off on All Products And Accessories
               </h2>
               <div className="mt-3">
-                <button className='button-repair'>Explore Now</button>
+                <button className="button-repair">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="new-products p-5">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="text-center">
+              <h1>New Arrivals</h1>
+              <p>Your Best Designer Outfits</p>
+            </div>
+            <NewArrivals />
+          </div>
+        </div>
+      </section>
+
+      <section className="deals p-5">
+        <div className="container-xxl">
+          <div className="row d-flex">
+            <div className="col-6">
+              <div className="card">
+                <div className="col-md-4">
+                  <img src={img1} alt="" className="img-fluid rounded-start" />
+                </div>
+                <div className="col-md-8"></div>
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="card">
+                <div className="col-md-4">
+                  <img src={img2} alt="" className="img-fluid rounded-start" />
+                </div>
+                <div className="col-md-8"></div>
               </div>
             </div>
           </div>
@@ -57,6 +95,6 @@ const Home = () => {
       </section>
     </>
   );
-}
+};
 
 export default Home;

@@ -185,4 +185,19 @@ button {
   color: white;
   border: 1px solid var(--primary);
 }
+
+.new-products .card img {
+  border-radius: 200px;
+  width: 100%;
+  max-height: 220px;
+}
+
+.new-products .card {
+  border-radius: 20px;
+  max-width: 250px;
+}
+
+.new-products .card span {
+  color: var(--darken);
+}
 /* Home Ends here */
