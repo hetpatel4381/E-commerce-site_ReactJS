@@ -175,7 +175,7 @@ button {
   font-size: 18px;
   border-radius: 10px;
   color: white;
-  background: var(--darken);
+  background: var(--search);
   border: 1px solid transparent;
   transition: 0.5s ease;
 }
@@ -199,5 +199,36 @@ button {
 
 .new-products .card span {
   color: var(--darken);
+}
+
+.button-deals {
+  padding: 10px 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: white;
+  background: var(--search);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.button-deals:hover {
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--search);
+}
+
+.button-blog{
+  padding: 10px 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: var(--primary1);
+  border: 1px solid transparent;
+  transition: 0.5s ease;
+}
+
+.button-blog:hover{
+  background: transparent;
+  color: var(--search);
+  border: 1px solid var(--darken);
 }
 /* Home Ends here */

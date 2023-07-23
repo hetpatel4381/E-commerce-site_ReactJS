@@ -5,6 +5,7 @@ import FeaturedProducts from "../Components/FeaturedProducts";
 import NewArrivals from "../Components/NewArrivals";
 import img1 from "../assets/images/banner/b17.jpg";
 import img2 from "../assets/images/banner/b10.jpg";
+import Blogs from "../Components/Blogs";
 
 const Home = () => {
   return (
@@ -74,22 +75,66 @@ const Home = () => {
       <section className="deals p-5">
         <div className="container-xxl">
           <div className="row d-flex">
-            <div className="col-6">
-              <div className="card">
-                <div className="col-md-4">
-                  <img src={img1} alt="" className="img-fluid rounded-start" />
+            <div className="col-6 p-4">
+              <div className="card row">
+                <div className="d-flex">
+                  <div className="col-md-4">
+                    <img
+                      src={img1}
+                      alt=""
+                      className="img-fluid rounded-start p-2 h-100"
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span>Hot Deals</span>
+                      <h3 className="card-title">Buy One get One Free.</h3>
+                      <p>
+                        The latest best collection in our closet Feel Cute with
+                        our outfits.
+                      </p>
+                      <button className="button-deals mt-3">Learn more</button>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-md-8"></div>
               </div>
             </div>
-            <div className="col-6">
-              <div className="card">
-                <div className="col-md-4">
-                  <img src={img2} alt="" className="img-fluid rounded-start" />
+            <div className="col-6 p-4">
+              <div className="card row">
+                <div className="d-flex">
+                  <div className="col-md-4">
+                    <img
+                      src={img2}
+                      alt=""
+                      className="img-fluid rounded-start p-2 h-100"
+                    />
+                  </div>
+                  <div className="col-md-8">
+                    <div className="card-body">
+                      <span>Hot Deals</span>
+                      <h3 className="card-title">Buy One get One Free.</h3>
+                      <p>
+                        The latest best collection in our closet Feel Cute with
+                        our outfits.
+                      </p>
+                      <button className="button-deals mt-3">Learn more</button>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-md-8"></div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="blogs p-3 mb-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="text-center mb-4">
+              <h1>Whats Our Customers Say</h1>
+              <p>Our customers never miss a bit on providing feedback</p>
+            </div>
+            <Blogs />
           </div>
         </div>
       </section>
