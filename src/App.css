@@ -232,3 +232,17 @@ button {
   border: 1px solid var(--darken);
 }
 /* Home Ends here */
+
+
+
+/* Shop Start here */
+
+.shop-banner {
+  background: url(./assets/images/banner/b1.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+
+/* Shop Ends here */
